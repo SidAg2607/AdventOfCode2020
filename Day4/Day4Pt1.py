@@ -20,19 +20,7 @@ for i in data2_final:
 valid = len(data_final)
 
 for i in data_final:
-    if i.find('byr:') == -1:
-        valid -= 1
-    elif i.find('iyr:') == -1:
-        valid -= 1
-    elif i.find('eyr:') == -1:
-        valid -= 1
-    elif i.find('hgt:') == -1:
-        valid -= 1
-    elif i.find('hcl:') == -1:
-        valid -= 1
-    elif i.find('ecl:') == -1:
-        valid -= 1
-    elif i.find('pid:') == -1:
+    if ((((((i.find('byr:') == -1) | (i.find('iyr:') == -1)) | (i.find('eyr:') == -1)) | (i.find('hgt:') == -1)) | (i.find('hcl:') == -1)) | (i.find('ecl:') == -1)) | (i.find('pid:') == -1):
         valid -= 1
 
 print(valid)

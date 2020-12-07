@@ -1,5 +1,5 @@
-f = open('day7text.txt', 'r+')
-r = f.readlines()
+file = open('day7text.txt', 'r+')
+r = file.readlines()
 
 rules = {}
 
@@ -35,3 +35,5 @@ def bagCounter(bag, opp):
 bagCounter('shiny gold', 1)
 
 print(Num)
+
+file.close()

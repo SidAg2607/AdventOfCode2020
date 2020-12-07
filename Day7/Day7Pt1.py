@@ -1,5 +1,5 @@
-f = open('day7text.txt', 'r+')
-r = f.readlines()
+file = open('day7text.txt', 'r+')
+r = file.readlines()
 
 # rule line in r = mirrored bronze bags contain 4 muted tomato bags, 4 bright white bags, 1 faded crimson bag.
 
@@ -50,3 +50,5 @@ def bagholder():
 
 
 print(bagholder())
+
+file.close()

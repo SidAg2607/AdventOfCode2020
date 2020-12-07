@@ -36,16 +36,17 @@ for a, b in rules.items():
         bags.append(a)
 
 
-def bagholder(bagList):
-    bags2 = bagList.copy()
+def bagholder():
+    global bags
+    r = len(bags)
     for a, b in rules.items():
-        for i in bags2:
-            if (i in b) and (a not in bags2):
-                bags2.append(a)
-    if len(bags2) == len(bagList):
-        print(len(bags2))
+        for i in bags:
+            if (i in b) and (a not in bags):
+                bags.append(a)
+    if r == len(bags):
+        return len(bags)
     else:
-        bagholder(bags2)
+        return bagholder()
 
 
-bagholder(bags)
+print(bagholder())

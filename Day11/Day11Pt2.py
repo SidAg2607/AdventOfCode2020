@@ -73,32 +73,21 @@ def adjacent(row, column):
         elif column == len(seats_changed[0]) - 1:
             return Dir8s(5, row, column) + Dir8s(6, row, column) + Dir8s(7, row, column)
         else:
-            return Dir8s(3, row, column) + Dir8s(4, row, column) + Dir8s(5, row, column) + Dir8s(6, row,
-                                                                                                 column) + Dir8s(7, row,
-                                                                                                                 column)
+            return Dir8s(3, row, column) + Dir8s(4, row, column) + Dir8s(5, row, column) + Dir8s(6, row, column) + Dir8s(7, row, column)
     elif row == len(seats_changed) - 1:
         if column == 0:
             return Dir8s(1, row, column) + Dir8s(2, row, column) + Dir8s(3, row, column)
         elif column == len(seats_changed[0]) - 1:
             return Dir8s(1, row, column) + Dir8s(7, row, column) + Dir8s(8, row, column)
         else:
-            return Dir8s(1, row, column) + Dir8s(2, row, column) + Dir8s(3, row, column) + Dir8s(7, row,
-                                                                                                 column) + Dir8s(8, row,
-                                                                                                                 column)
+            return Dir8s(1, row, column) + Dir8s(2, row, column) + Dir8s(3, row, column) + Dir8s(7, row, column) + Dir8s(8, row, column)
     else:
         if column == 0:
-            return Dir8s(1, row, column) + Dir8s(2, row, column) + Dir8s(3, row, column) + Dir8s(4, row,
-                                                                                                 column) + Dir8s(5, row,
-                                                                                                                 column)
+            return Dir8s(1, row, column) + Dir8s(2, row, column) + Dir8s(3, row, column) + Dir8s(4, row, column) + Dir8s(5, row, column)
         elif column == len(seats_changed[0]) - 1:
-            return Dir8s(1, row, column) + Dir8s(5, row, column) + Dir8s(6, row, column) + Dir8s(7, row,
-                                                                                                 column) + Dir8s(8, row,
-                                                                                                                 column)
+            return Dir8s(1, row, column) + Dir8s(5, row, column) + Dir8s(6, row, column) + Dir8s(7, row, column) + Dir8s(8, row, column)
         else:
-            return Dir8s(1, row, column) + Dir8s(2, row, column) + Dir8s(3, row, column) + Dir8s(4, row,
-                                                                                                 column) + Dir8s(5, row,
-                                                                                                                 column) + Dir8s(
-                6, row, column) + Dir8s(7, row, column) + Dir8s(8, row, column)
+            return Dir8s(1, row, column) + Dir8s(2, row, column) + Dir8s(3, row, column) + Dir8s(4, row, column) + Dir8s(5, row, column) + Dir8s(6, row, column) + Dir8s(7, row, column) + Dir8s(8, row, column)
 
 
 NumOfAdjSeats = []

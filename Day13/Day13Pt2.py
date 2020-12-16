@@ -26,7 +26,7 @@ res = 1
 for x in BusNotX:
     res = res * x
 
-# Remainder theorem
+# Chinese Remainder theorem
 for busindex, bus in enumerate(BusNotX):
     bi = mods[busindex]
     Ni = int(res / bus)

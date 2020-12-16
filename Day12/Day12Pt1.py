@@ -1,3 +1,5 @@
+#I know this is not the shortest or the best solution
+
 f = open('day12text.txt', 'r+')
 
 r = [[x[0], int(x[1:-1])] if x[-1] == '\n' else [x[0], int(x[1:])] for x in f.readlines()]

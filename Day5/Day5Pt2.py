@@ -27,8 +27,8 @@ seat_id_missing = []
 
 for row in range(128):
     for column in range(8):
-        if row*column not in seat_id:
-            seat_id_missing.append(row*column)
+        if row*8+column not in seat_id:
+            seat_id_missing.append(row*8+column)
 
 for s in seat_id_missing:
     if (s+1 in seat_id) and (s-1 in seat_id):

@@ -154,7 +154,7 @@ Ticket = [int(Column_my_ticket) for Column_my_ticket in r[r.index("your ticket:\
 FinalAnswer = 1
 
 for colp, valp in final.items():
-    if valp in range(6):
+    if valp in [r.index(line) for line in r if "departure" in line]:
         FinalAnswer *= Ticket[colp]
 
 print("Part 2:", FinalAnswer)

@@ -1,4 +1,4 @@
-# I didn't knew set() and intersection() when I wrote this
+# I didn't know set() and intersection() when I wrote this
 
 data = open("day6text.txt", "+r")
 lines = data.readlines()
